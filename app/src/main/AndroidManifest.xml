@@ -18,7 +18,8 @@
         </activity>
         <activity android:name=".activities.tuner.TunerActivity" />
         <activity android:name=".activities.test.TestActivity" />
-        <activity android:name=".activities.notes.NotesActivity"></activity>
+        <activity android:name=".activities.notes.NotesActivity" />
+        <activity android:name=".activities.turorial.StartTutorialActivity"></activity>
     </application>
 
 </manifest>
