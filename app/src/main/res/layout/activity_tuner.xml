@@ -1,9 +1,80 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.evlishelper.lwizapp.activities.tuner.TunerActivity">
+    android:background="#291403">
 
-</android.support.constraint.ConstraintLayout>
+    <View
+        android:background="#291403"
+        android:id="@+id/center"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_width="6dp" />
+
+    <View
+        android:background="#E9B988"
+        android:id="@+id/third_string"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_toLeftOf="@id/center"
+        android:layout_toStartOf="@id/center"
+        android:layout_width="8dp"
+        />
+
+    <View
+        android:background="#E9B988"
+        android:id="@+id/second_string"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="37dp"
+        android:layout_marginEnd="37dp"
+        android:layout_toLeftOf="@id/third_string"
+        android:layout_toStartOf="@id/third_string"
+        android:layout_width="7dp"
+        />
+
+    <View
+        android:background="#E9B988"
+        android:id="@+id/first_string"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="37dp"
+        android:layout_marginEnd="37dp"
+        android:layout_toLeftOf="@id/second_string"
+        android:layout_toStartOf="@id/second_string"
+        android:layout_width="6dp"
+        />
+
+    <View
+        android:background="#E9B988"
+        android:id="@+id/fourth_string"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_toRightOf="@id/center"
+        android:layout_toEndOf="@id/center"
+        android:layout_width="9dp" />
+
+    <View
+        android:background="#E9B988"
+        android:id="@+id/fifth_string"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="37dp"
+        android:layout_marginStart="37dp"
+        android:layout_toRightOf="@id/fourth_string"
+        android:layout_toEndOf="@id/fourth_string"
+        android:layout_width="10dp" />
+
+    <View
+        android:background="#E9B988"
+        android:id="@+id/sixth_string"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="37dp"
+        android:layout_marginStart="37dp"
+        android:layout_toRightOf="@id/fifth_string"
+        android:layout_toEndOf="@id/fifth_string"
+        android:layout_width="11dp" />
+
+
+</RelativeLayout>

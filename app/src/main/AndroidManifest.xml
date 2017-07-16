@@ -31,6 +31,8 @@
             android:theme="@style/AppTheme.NoActionBar">
 
         </activity>
+        <activity android:name=".activities.notes.NotesActivity" />
+        <activity android:name=".activities.turorial.StartTutorialActivity"></activity>
     </application>
 
 </manifest>

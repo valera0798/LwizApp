@@ -1,23 +1,37 @@
 package com.evlishelper.lwizapp.activities.main;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 import com.evlishelper.lwizapp.R;
 import com.evlishelper.lwizapp.activities.notes.NotesActivity;
 import com.evlishelper.lwizapp.activities.test.TestActivity;
 import com.evlishelper.lwizapp.activities.tuner.TunerActivity;
+import com.evlishelper.lwizapp.activities.turorial.StartTutorialActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     private Button btnNotesAct, btnTestAct, btnTunerAct;
+    private SharedPreferences sharedPreferences;
+    private final String FIRST_LAUNCH = "first_launch";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        sharedPreferences = getPreferences(MODE_PRIVATE);
+
+        if (checkIfFirstLaunch()) {
+            SharedPreferences.Editor editor = sharedPreferences.edit();
+            editor.putBoolean(FIRST_LAUNCH, false);
+            editor.apply();
+            Intent intent = new Intent(this, StartTutorialActivity.class);
+            startActivity(intent);
+        }
 
         btnTunerAct = (Button) findViewById(R.id.btn_tuner);
         btnNotesAct = (Button) findViewById(R.id.btn_notes);
@@ -45,5 +59,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(intent);
                 break;
         }
+    }
+
+    public boolean checkIfFirstLaunch() {
+        return sharedPreferences.getBoolean(FIRST_LAUNCH, true);
     }
 }
