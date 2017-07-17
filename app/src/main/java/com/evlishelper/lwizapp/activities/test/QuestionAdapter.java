@@ -20,7 +20,7 @@ import java.util.List;
 public class QuestionAdapter extends RecyclerView.Adapter<QuestionAdapter.QuestionViewHolder> {
     List<Question> questions;
 
-    public QuestionAdapter(List<Question> questions, Context context) {
+    public QuestionAdapter(List<Question> questions) {
         this.questions = questions;
     }
 
