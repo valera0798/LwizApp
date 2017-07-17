@@ -16,19 +16,18 @@ public class TutorialViewPagerAdapter extends FragmentPagerAdapter {
 
         switch (position) {
             case 0:
-                fragment = new TutorialFragment();
+                fragment = new GreetingFragment();
                 break;
             case 1:
-                fragment = new TutorialFragment();
+                fragment = new TunerTutorialFragment();
                 break;
             case 2:
-                fragment = new TutorialFragment();
+                fragment = new TestTutorialFragment();
                 break;
             case 3:
-                fragment = new TutorialFragment();
+                fragment = new NotesTutorialFragment();
                 break;
         }
-
         return fragment;
     }
 
