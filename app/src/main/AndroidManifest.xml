@@ -24,15 +24,15 @@
             android:theme="@style/AppTheme.NoActionBar">
 
         </activity>
-        n
         <activity
             android:name=".activities.notes.EditNoteActivity"
             android:label="Edit note"
             android:theme="@style/AppTheme.NoActionBar">
 
         </activity>
-        <activity android:name=".activities.notes.NotesActivity" />
-        <activity android:name=".activities.turorial.StartTutorialActivity"></activity>
+        <activity android:name=".activities.turorial.StartTutorialActivity">
+
+        </activity>
     </application>
 
 </manifest>
