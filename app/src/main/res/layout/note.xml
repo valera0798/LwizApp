@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:paddingBottom="1dp"
+    android:paddingEnd="2dp"
+    android:paddingStart="2dp"
+    android:paddingTop="1dp">
+
+    <RelativeLayout
+        android:id="@+id/noteHolder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/noteTitle"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/letter"
+            android:layout_marginStart="21dp"
+            android:layout_toEndOf="@+id/letter"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="Lorem ipsum"
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/noteText"
+            android:layout_width="250dp"
+            android:layout_height="20dp"
+            android:layout_alignStart="@+id/noteTitle"
+            android:layout_below="@id/noteTitle"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="5dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="The quick brown fox jumps over the lazy dog"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/noteDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginEnd="13dp"
+            android:maxLines="1"
+            android:text="11/11/2011 11:12:13"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/letter"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/circle"
+            android:gravity="center"
+            android:maxLength="1"
+            android:shadowColor="#000000"
+            android:shadowDx="1.5"
+            android:shadowDy="1.3"
+            android:shadowRadius="1.6"
+            android:text="L"
+            android:textColor="#FFFFFF"
+            android:textSize="40sp"
+            app:srcCompat="@color/colorPrimaryText" />
+
+    </RelativeLayout>
+</LinearLayout>
