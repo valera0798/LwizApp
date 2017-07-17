@@ -53,7 +53,7 @@ public class TestActivity extends AppCompatActivity {
                 t.show();
                 finish();
                 String[] drugs = getList("drugs.txt");
-                Toast.makeText(getApplicationContext(),drugs[(int) (Math.random()* 8)],Toast.LENGTH_LONG).show();
+                Toast.makeText(getApplicationContext(), drugs[(int) (Math.random() * 8)], Toast.LENGTH_LONG).show();
             }
         });
     }
@@ -71,7 +71,7 @@ public class TestActivity extends AppCompatActivity {
             e.printStackTrace();
         }
         String str_data = new String(buffer);
-        String[] strings = str_data.split("\\?");
+        String[] strings = str_data.split("\n");
         return strings;
     }
 }

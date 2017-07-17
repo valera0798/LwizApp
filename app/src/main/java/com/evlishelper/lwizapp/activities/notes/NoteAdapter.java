@@ -68,7 +68,12 @@ class NoteAdapter extends RecyclerView.Adapter<NoteAdapter.NoteHolder> {
         border.setCornerRadius(10);
         holder.colorHolder.setBackground(border);
         holder.letter.getBackground().setColorFilter(notes.get(position).color, PorterDuff.Mode.SRC);
-        holder.letter.setText(String.valueOf(Character.toUpperCase(notes.get(position).title.charAt(0))));
+        if (notes.get(position).title.length() != 0) {
+            holder.letter.setText(String.valueOf(Character.toUpperCase(notes.get(position).title.charAt(0))));
+        } else {
+            holder.letter.setText("");
+        }
+
         holder.date.setText(formatter.format(notes.get(position).date));
         holder.itemView.setOnLongClickListener(new View.OnLongClickListener() {
             private NoteHolder anonHolder;
