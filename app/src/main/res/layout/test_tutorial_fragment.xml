@@ -1,6 +1,72 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-</LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textSize="20sp"
+                android:text="@string/test0"
+                android:fontFamily="sans-serif-light"
+                android:id="@+id/test0"
+                android:layout_margin="16dp"/>
+
+
+            <pl.droidsonroids.gif.GifImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/image_test"
+                android:layout_below="@+id/test0"
+                android:src="@drawable/test"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/test1"
+                android:layout_margin="16dp"
+                android:textSize="16sp"
+                android:fontFamily="sans-serif-thin"
+                android:textColor="@color/colorText"
+                android:layout_below="@+id/image_test"
+                android:id="@+id/test1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/test2"
+                android:layout_margin="16dp"
+                android:textSize="16sp"
+                android:fontFamily="sans-serif-thin"
+                android:textColor="@color/colorText"
+                android:layout_below="@id/test1"
+                android:id="@+id/test2"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/test3"
+                android:layout_margin="16dp"
+                android:textSize="16sp"
+                android:fontFamily="sans-serif-thin"
+                android:textColor="@color/colorText"
+                android:layout_below="@id/test2"
+                android:id="@+id/test3" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

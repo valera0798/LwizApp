@@ -1,6 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-</LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textSize="20sp"
+                android:text="@string/tuner0"
+                android:fontFamily="sans-serif-light"
+                android:id="@+id/notes0"
+                android:layout_margin="16dp"/>
+
+            <pl.droidsonroids.gif.GifImageView
+                android:src="@drawable/tuner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/image_tuner"
+                android:layout_below="@+id/notes0"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tuner1"
+                android:layout_margin="16dp"
+                android:textSize="16sp"
+                android:fontFamily="sans-serif-thin"
+                android:textColor="@color/colorText"
+                android:layout_below="@+id/image_tuner"
+                android:id="@+id/tuner1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tuner2"
+                android:layout_margin="16dp"
+                android:textSize="16sp"
+                android:fontFamily="sans-serif-thin"
+                android:textColor="@color/colorText"
+                android:layout_below="@id/tuner1"
+                android:id="@+id/tuner2"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tuner3"
+                android:layout_margin="16dp"
+                android:textSize="16sp"
+                android:fontFamily="sans-serif-thin"
+                android:textColor="@color/colorText"
+                android:layout_below="@id/tuner2"
+                android:id="@+id/greeting3" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

@@ -20,6 +20,7 @@
         android:layout_marginLeft="16dp"
         android:layout_marginRight="3dp"
         android:layout_toLeftOf="@+id/cb"
+        android:fontFamily="sans-serif-light"
         android:layout_height="wrap_content" />
 
     <CheckBox

@@ -1,6 +1,80 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-</LinearLayout>
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:layout_centerHorizontal="true"
+                android:textSize="20sp"
+                android:text="@string/notes0"
+                android:fontFamily="sans-serif-light"
+                android:id="@+id/notes0" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/notes1"
+                android:layout_margin="16dp"
+                android:textSize="16sp"
+                android:fontFamily="sans-serif-thin"
+                android:textColor="@color/colorText"
+                android:layout_below="@+id/notes0"
+                android:id="@+id/notes1"/>
+
+            <pl.droidsonroids.gif.GifImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/image_notes_add"
+                android:layout_below="@+id/notes1"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="16dp"
+                android:src="@drawable/note_add"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/notes2"
+                android:layout_margin="16dp"
+                android:textSize="16sp"
+                android:fontFamily="sans-serif-thin"
+                android:textColor="@color/colorText"
+                android:layout_below="@+id/image_notes_add"
+                android:id="@+id/notes2"/>
+
+            <pl.droidsonroids.gif.GifImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/image_notes_sort"
+                android:layout_below="@+id/notes2"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="16dp"
+                android:src="@drawable/note_sort"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/notes3"
+                android:layout_margin="16dp"
+                android:textSize="16sp"
+                android:fontFamily="sans-serif-thin"
+                android:textColor="@color/colorText"
+                android:layout_below="@+id/image_notes_sort"
+                android:id="@+id/notes3" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
