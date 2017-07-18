@@ -3,6 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@drawable/back3"
     tools:context="com.evlishelper.lwizapp.activities.main.MainActivity">
 
     <LinearLayout
@@ -12,28 +13,37 @@
         android:orientation="vertical">
 
         <Button
+            android:textStyle="italic"
+            android:textColor="@color/colorIcons"
+            android:background="@color/colorAccent"
             android:id="@+id/btn_tuner"
-            android:layout_width="150dp"
+            android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
             android:text="@string/btn_tuner"
-            android:textSize="20sp" />
+            android:textSize="30sp" />
 
         <Button
+            android:textStyle="italic"
+            android:textColor="@color/colorIcons"
+            android:background="@color/colorAccent"
             android:id="@+id/btn_notes"
-            android:layout_width="150dp"
+            android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
             android:text="@string/btn_notes"
-            android:textSize="20sp" />
+            android:textSize="30sp" />
 
         <Button
+            android:textStyle="italic"
+            android:background="@color/colorAccent"
+            android:textColor="@color/colorIcons"
             android:id="@+id/btn_test"
-            android:layout_width="150dp"
+            android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
             android:text="@string/btn_test"
-            android:textSize="20sp" />
+            android:textSize="30sp" />
 
     </LinearLayout>
 </RelativeLayout>
