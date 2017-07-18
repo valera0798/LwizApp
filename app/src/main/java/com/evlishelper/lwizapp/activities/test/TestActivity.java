@@ -45,8 +45,6 @@ public class TestActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Toast t = Toast.makeText(getApplicationContext(), R.string.app_name, Toast.LENGTH_SHORT);
-                AudioManager audioManager = (AudioManager) getSystemService(Context.AUDIO_SERVICE);
-                audioManager.setStreamVolume(AudioManager.STREAM_MUSIC, 20, 0);
                 ImageView im = new ImageView(getApplicationContext());
                 int numb = adapter.getNumberOfCorrect();
                 if (numb < 4) {
@@ -114,7 +112,6 @@ public class TestActivity extends AppCompatActivity {
             ex.printStackTrace();
         }
         mediaPlayer.setLooping(false);
-        mediaPlayer.setVolume(0.2f, 0.2f);
         mediaPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
             @Override
             public void onCompletion(MediaPlayer mp) {
