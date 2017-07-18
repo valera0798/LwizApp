@@ -12,10 +12,6 @@ public class Question {
         return question;
     }
 
-    public void setQuestion(String question) {
-        this.question = question;
-    }
-
     public boolean isCorrecet() {
         return isCorrecet;
     }
@@ -24,11 +20,6 @@ public class Question {
         isCorrecet = correcet;
     }
 
-    public Question(String question, boolean isCorrecet) {
-        this.question = question;
-        this.isCorrecet = isCorrecet;
-
-    }
 
     public Question(String question) {
         this.question = question;

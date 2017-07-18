@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">LwizApp</string>
-    <string name="btn_tuner">Тюнер</string>
+    <string name="edit_note">Edit note</string>
+    <string name="btn_tuner">Tuner</string>
     <string name="btn_test">Тест</string>
     <string name="btn_notes">Заметки</string>
 </resources>

@@ -13,24 +13,27 @@
 
         <Button
             android:id="@+id/btn_tuner"
-            android:layout_width="wrap_content"
+            android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
-            android:text="@string/btn_tuner" />
+            android:text="@string/btn_tuner"
+            android:textSize="20sp" />
 
         <Button
             android:id="@+id/btn_notes"
-            android:layout_width="wrap_content"
+            android:layout_width="150dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:text="@string/btn_notes" />
+            android:layout_marginTop="24dp"
+            android:text="@string/btn_notes"
+            android:textSize="20sp" />
 
         <Button
             android:id="@+id/btn_test"
-            android:layout_width="wrap_content"
+            android:layout_width="150dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:text="@string/btn_test" />
+            android:layout_marginTop="24dp"
+            android:text="@string/btn_test"
+            android:textSize="20sp" />
 
     </LinearLayout>
 </RelativeLayout>
