@@ -24,7 +24,7 @@
             android:padding="12dp"
             android:layout_gravity="bottom"
             app:fillColor="#dd2323"
-            app:pageColor="#FFFFFFFF"
+            app:pageColor="#e8e8e8"
             app:strokeColor="#dd2323"/>
 
         <android.support.design.widget.FloatingActionButton

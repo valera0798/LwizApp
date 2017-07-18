@@ -114,6 +114,7 @@ public class TestActivity extends AppCompatActivity {
             ex.printStackTrace();
         }
         mediaPlayer.setLooping(false);
+        mediaPlayer.setVolume(0.2f, 0.2f);
         mediaPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
             @Override
             public void onCompletion(MediaPlayer mp) {
