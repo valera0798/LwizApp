@@ -13,7 +13,6 @@
         android:orientation="vertical">
 
         <Button
-            android:textStyle="italic"
             android:textColor="@color/colorIcons"
             android:background="@color/colorAccent"
             android:id="@+id/btn_tuner"
@@ -24,7 +23,6 @@
             android:textSize="30sp" />
 
         <Button
-            android:textStyle="italic"
             android:textColor="@color/colorIcons"
             android:background="@color/colorAccent"
             android:id="@+id/btn_notes"
@@ -35,7 +33,6 @@
             android:textSize="30sp" />
 
         <Button
-            android:textStyle="italic"
             android:background="@color/colorAccent"
             android:textColor="@color/colorIcons"
             android:id="@+id/btn_test"
