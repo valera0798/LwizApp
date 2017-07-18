@@ -13,9 +13,12 @@
     </android.support.v7.widget.RecyclerView>
 
     <Button
+        android:background="@color/colorAccent"
         android:layout_alignParentBottom="true"
         android:layout_width="match_parent"
         android:id="@+id/finish_btn"
+        android:textColor="@color/colorIcons"
+        android:textStyle="bold"
         android:text="ЗАВЕРШИТЬ ТЕСТИРОВАНИЕ"
         android:layout_height="50dp"
         android:fontFamily="sans-serif" />
