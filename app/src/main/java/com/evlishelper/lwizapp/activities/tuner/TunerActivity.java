@@ -33,8 +33,7 @@ public class TunerActivity extends AppCompatActivity {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         setContentView(R.layout.activity_tuner);
-        AudioManager audioManager = (AudioManager)getSystemService(Context.AUDIO_SERVICE);
-        audioManager.setStreamVolume(AudioManager.STREAM_MUSIC, 20, 0);
+
 
 
         final Animation animShake1 = AnimationUtils.loadAnimation(this, R.anim.shake);
@@ -116,7 +115,6 @@ public class TunerActivity extends AppCompatActivity {
             ex.printStackTrace();
         }
         mediaPlayer.setLooping(false);
-        mediaPlayer.setVolume(1.0f, 1.0f);
         mediaPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
             @Override
             public void onCompletion(MediaPlayer mp) {

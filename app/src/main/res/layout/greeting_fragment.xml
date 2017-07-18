@@ -1,6 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-</LinearLayout>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/guitar"
+        android:id="@+id/guitarImage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/greeting1"
+        android:layout_margin="16dp"
+        android:textSize="18sp"
+        android:fontFamily="sans-serif-thin"
+        android:textColor="@color/colorText"
+        android:layout_below="@+id/guitarImage"
+        android:id="@+id/greeting1"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/greeting2"
+        android:layout_margin="16dp"
+        android:textSize="18sp"
+        android:fontFamily="sans-serif-thin"
+        android:textColor="@color/colorText"
+        android:layout_below="@id/greeting1"
+        android:id="@+id/greeting2"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/greeting3"
+        android:layout_margin="16dp"
+        android:textSize="18sp"
+        android:fontFamily="sans-serif-thin"
+        android:textColor="@color/colorText"
+        android:layout_below="@id/greeting2"
+        android:id="@+id/greeting3"
+         />
+
+</RelativeLayout>

@@ -13,25 +13,29 @@
         android:layout_weight="1">
     </android.support.v4.view.ViewPager>
 
-    <com.viewpagerindicator.CirclePageIndicator
-        android:id="@+id/titles"
-        android:layout_height="wrap_content"
+    <FrameLayout
         android:layout_width="match_parent"
-        android:padding="10dip"
-        app:fillColor="#FF000000"
-        app:pageColor="#FFFFFFFF"
-        app:strokeColor="#FF000000">
-    </com.viewpagerindicator.CirclePageIndicator>
+        android:layout_height="wrap_content">
 
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/floatingActionButton"
-        android:layout_gravity="right"
-        android:layout_marginBottom="16dp"
-        android:layout_marginRight="16dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        <com.viewpagerindicator.CirclePageIndicator
+            android:id="@+id/titles"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:layout_gravity="bottom"
+            app:fillColor="#dd2323"
+            app:pageColor="#FFFFFFFF"
+            app:strokeColor="#dd2323"/>
 
-        android:src="@drawable/ic_action_forward_light" />
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/floatingActionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_margin="8dp"
+            android:src="@drawable/ic_action_forward_light" />
+
+    </FrameLayout>
 
 
 </LinearLayout>
